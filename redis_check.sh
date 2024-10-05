@@ -22,7 +22,7 @@ while [[ $(date +%s) -lt $end_time ]]; do
     now=$(current_time)
 
     # Attempt to set a key and get the value
-    redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" set foo bar > /dev/null 2>&1
+    redis-cli -c -h "$REDIS_HOST" -p "$REDIS_PORT" set foo bar > /dev/null 2>&1
     if [[ $? -ne 0 ]]; then
         # Handle connection errors
         if [[ $downtime_start -eq 0 ]]; then
