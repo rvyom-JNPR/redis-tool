@@ -2,9 +2,10 @@
 
 # Configuration
 #REDIS_HOST="redis-lisatest.vtgldn.clustercfg.use1.cache.amazonaws.com"
-REDIS_HOST="vyomtest.vtgldn.clustercfg.use1.cache.amazonaws.com"
+#REDIS_HOST="vyomtest.vtgldn.clustercfg.use1.cache.amazonaws.com"
+REDIS_HOST="vyomtestpapiinternal.vtgldn.clustercfg.use1.cache.amazonaws.com"
 REDIS_PORT=6379
-DURATION=1800  # Test duration in seconds (30 minutes)
+DURATION=3600  # Test duration in seconds (30 minutes)
 INTERVAL=1     # Interval between commands in seconds
 
 # Variables to track downtime
